@@ -1,7 +1,7 @@
 var express = require("express");
  var app = express();
 
- /* serves main page */
+ /* serves main page if no specific file is requested*/
  app.get("/", function(req, res) {
     res.sendfile('index.htm')
  });
